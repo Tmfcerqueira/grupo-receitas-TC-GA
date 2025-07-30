@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolo de Iogurte - Receita Deliciosa</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            color: #8B4513;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: #666;
+            font-size: 1.1em;
+        }
+
+        .recipe-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .recipe-section {
+            margin-bottom: 30px;
+        }
+
+        .recipe-section h2 {
+            color: #8B4513;
+            border-bottom: 2px solid #8B4513;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .ingredients-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .ingredients-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .ingredients-list li:last-child {
+            border-bottom: none;
+        }
+
+        .quantity {
+            font-weight: bold;
+            color: #8B4513;
+        }
+
+        .instructions-list {
+            list-style: decimal;
+            padding-left: 20px;
+        }
+
+        .instructions-list li {
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+
+        .tips {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .tips h3 {
+            color: #856404;
+            margin-bottom: 10px;
+        }
+
+        .back-button {
+            display: inline-block;
+            background: #8B4513;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 25px;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+
+        .back-button:hover {
+            background: #654321;
+        }
+
+        .prep-time {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .time-item {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            flex: 1;
+            margin: 0 10px;
+        }
+
+        .time-item h4 {
+            color: #8B4513;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🥛 Bolo de Iogurte</h1>
+            <p>Um bolo suave e cremoso que derrete na boca!</p>
+        </div>
+
+        <div class="recipe-card">
+            <div class="prep-time">
+                <div class="time-item">
+                    <h4>⏱️ Tempo de Preparo</h4>
+                    <p>20 minutos</p>
+                </div>
+                <div class="time-item">
+                    <h4>🔥 Tempo de Cozimento</h4>
+                    <p>40 minutos</p>
+                </div>
+                <div class="time-item">
+                    <h4>👥 Porções</h4>
+                    <p>12 fatias</p>
+                </div>
+            </div>
+
+            <div class="recipe-section">
+                <h2>📋 Ingredientes</h2>
+                <ul class="ingredients-list">
+                    <li><span>Farinha de trigo</span> <span class="quantity">2 xícaras</span></li>
+                    <li><span>Açúcar</span> <span class="quantity">1 xícara</span></li>
+                    <li><span>Iogurte natural</span> <span class="quantity">1 pote (170g)</span></li>
+                    <li><span>Ovos</span> <span class="quantity">3 unidades</span></li>
+                    <li><span>Óleo vegetal</span> <span class="quantity">1/2 xícara</span></li>
+                    <li><span>Fermento em pó</span> <span class="quantity">1 colher (sopa)</span></li>
+                    <li><span>Baunilha</span> <span class="quantity">1 colher (chá)</span></li>
+                    <li><span>Sal</span> <span class="quantity">1 pitada</span></li>
+                </ul>
+            </div>
+
+            <div class="recipe-section">
+                <h2>🍯 Calda de Mel (Opcional)</h2>
+                <ul class="ingredients-list">
+                    <li><span>Mel</span> <span class="quantity">1/2 xícara</span></li>
+                    <li><span>Água</span> <span class="quantity">1/4 xícara</span></li>
+                    <li><span>Manteiga</span> <span class="quantity">2 colheres (sopa)</span></li>
+                </ul>
+            </div>
+
+            <div class="recipe-section">
+                <h2>👨‍🍳 Modo de Preparo</h2>
+                <ol class="instructions-list">
+                    <li><strong>Pré-aqueça o forno</strong> a 180°C e unte uma forma de bolo (22cm de diâmetro).</li>
+                    <li><strong>Em uma tigela grande</strong>, bata os ovos com o açúcar até ficar claro e fofo.</li>
+                    <li><strong>Adicione o iogurte</strong> e continue batendo até incorporar.</li>
+                    <li><strong>Adicione o óleo</strong> e a baunilha, misturando bem.</li>
+                    <li><strong>Em uma tigela separada</strong>, misture a farinha, fermento e sal.</li>
+                    <li><strong>Adicione os ingredientes secos</strong> à mistura líquida, mexendo delicadamente.</li>
+                    <li><strong>Despeje na forma</strong> e leve ao forno por 35-40 minutos.</li>
+                    <li><strong>Faça o teste do palito</strong> - se sair limpo, o bolo está pronto!</li>
+                    <li><strong>Deixe esfriar</strong> por 10 minutos antes de desenformar.</li>
+                    <li><strong>Deixe esfriar completamente</strong> antes de servir.</li>
+                </ol>
+            </div>
+
+            <div class="recipe-section">
+                <h2>🍯 Calda de Mel (Opcional)</h2>
+                <ol class="instructions-list">
+                    <li><strong>Em uma panela pequena</strong>, aqueça o mel, água e manteiga.</li>
+                    <li><strong>Deixe ferver</strong> por 2-3 minutos até engrossar levemente.</li>
+                    <li><strong>Despeje sobre o bolo</strong> ainda quente, se desejar.</li>
+                    <li><strong>Deixe a calda penetrar</strong> no bolo por alguns minutos.</li>
+                </ol>
+            </div>
+
+            <div class="tips">
+                <h3>💡 Dicas Especiais</h3>
+                <ul>
+                    <li>Use iogurte natural sem açúcar para melhor resultado.</li>
+                    <li>O iogurte pode ser substituído por iogurte grego para um bolo mais denso.</li>
+                    <li>Para um bolo mais úmido, adicione 1/4 xícara de leite.</li>
+                    <li>Pode adicionar raspas de limão ou laranja para dar sabor cítrico.</li>
+                    <li>O bolo fica ainda melhor no dia seguinte, guardado em recipiente fechado.</li>
+                    <li>Para variar, adicione frutas secas ou nozes picadas à massa.</li>
+                </ul>
+            </div>
+
+            <a href="../index.html" class="back-button">← Voltar ao Menu</a>
+        </div>
+    </div>
+</body>
+</html> 
