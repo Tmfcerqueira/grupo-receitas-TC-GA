@@ -10,9 +10,9 @@ Este projeto tem como objetivo criar uma página colaborativa com receitas compa
 - Entregue o link do repositório no GoogleClassRoom
 
 ## Integrantes
-- Tomás Cerqueira
-- Marco Neto
-- Guilherme Antunes
+- Tomás Cerqueira (@Tmfcerqueira | @TomasCerqueira)
+- Marco Neto (@Marcopolo017)
+- Guilherme Antunes (@gui-antunes-gh)
 
 ## Descrição
 Os integrantes devem adicionar receitas em arquivos markdown ou HTML, utilizando boas práticas de versionamento com Git e GitHub.
